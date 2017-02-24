@@ -71,7 +71,6 @@ class Route(dict):
         self['maneuvers'] = maneuvers
         self['number_of_steps'] = len(maneuvers)
         
-        
 
 class GoogleAPI(API):
 
@@ -215,7 +214,6 @@ class GoogleAPI(API):
         return points
 
 
-
 class MapquestAPI(API):
 
     _turn_types = ['straight', 'slight right', 'right', 'sharp right', 'reverse', 'sharp left', 'left', 'slight left', 'right u-turn', 'left u-turn', 'right merge', 'left merge', 'right on ramp', 'left on ramp', 'right off ramp', 'left off ramp', 'right fork', 'left fork', 'straight fork', 'take transit', 'transfer transit', 'port transit', 'enter transit', 'exit transit']
@@ -295,7 +293,6 @@ class MapquestAPI(API):
 
 
 def main():
-
     parser = argparse.ArgumentParser()
     parser.add_argument("city", help="City to run grid analysis for: 'sf' or 'nyc'")
     parser.add_argument("start_time", type=int, help="## between 00 and 24")
