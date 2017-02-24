@@ -2,7 +2,6 @@
 
 import csv
 import argparse
-import json
 
 from geojson import Polygon, Feature, FeatureCollection, dump
 
