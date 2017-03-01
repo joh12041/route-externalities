@@ -26,8 +26,10 @@ An examination of externalities associated with alternative routing criteria and
     * mapping_platforms/get_routes.py
 2. Get GraphHopper routes for od-pairs
     * see https://github.com/joh12041/graphhopper
+    * com.graphhopper.reader.osm.AlternativeRoutingExternalities
 3. Match Google and Mapquest routes to GraphHopper network for final metrics
     * see https://github.com/joh12041/graphhopper
+    * com.graphhopper.reader.osm.AlternativeRoutingExternalities
 4. Merge together GraphHopper metrics and original data
     * utils/merge_api_gh_results.py
 5. Route-level analyses between all routes
@@ -36,3 +38,6 @@ An examination of externalities associated with alternative routing criteria and
     * utils/significant_diff_segments.py
 7. Run community-level analyses
     * community_externalities/calc_hmi.py
+
+## Example Data
+* Load in statsobjs_routeexternalities.pkl in routelevel_externalities/routelevel_externalities.ipynb
